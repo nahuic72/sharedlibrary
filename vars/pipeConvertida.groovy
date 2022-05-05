@@ -19,17 +19,17 @@ def call(String repoUrl) {
                        url: "${repoUrl}"
                }
            }
-           stage("Cleaning workspace") {
+           stage("Limpiar workspace") {
                steps {
                    bat "mvn clean"
                }
            }
-           stage("Running Testcase") {
+           stage("Lanzar Testcase") {
               steps {
                    bat "mvn test"
                }
            }
-           stage("Packing Application") {
+           stage("Empaquetar Application") {
                steps {
                    bat "mvn package -DskipTests"
                }
