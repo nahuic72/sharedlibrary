@@ -5,7 +5,7 @@
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/6.7/samples
  */
  
-plugin: 'groovy'
+apply plugin: 'groovy'
   
 // follow the structure as dictated by Jenkins:
 sourceSets {
