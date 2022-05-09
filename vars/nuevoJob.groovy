@@ -19,7 +19,7 @@ def call(Map args) {
           checkout scm
         }  
         container('node') {
-            stage('Instalar Dependencias') {
+            stage('Instalar Dependencias y otras hierbas') {
               sh 'npm install'
             }
             stage('Construir y publicar una imagen en el Registry') {
